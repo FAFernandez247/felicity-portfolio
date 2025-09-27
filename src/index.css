@@ -52,7 +52,7 @@
         @apply ring-8 border-2 bg-cream ring-pink-950 border-amber-50 dark:bg-pastelblue dark:ring-blue-950 dark:border-blue-100;
     }
     .window-header {
-        @apply border-2 border-gray-400 bg-darkpastelpink dark:bg-darkerpastelblue;
+        @apply border-b-4 border-gray-400 bg-darkpastelpink dark:bg-darkerpastelblue;
     }
     .exitButton-bevel {
         @apply border-b-4 border-r-4 border-pink-950 dark:border-blue-950;

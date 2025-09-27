@@ -21,8 +21,8 @@ export default function App() {
     };
     const cards = [
     { id: "aboutMe", title: "AboutMe.exe", width:"800", height:"500", content: <AboutMe/> },
-    { id: "skills", title: "Skills", width:"500", height:"600", content: <Skills/> },
-    { id: "projects", title: "Projects", width:"600", height:"400", content: <Projects/> },
+    { id: "skills", title: "Skills", width:"450", height:"600", content: <Skills/> },
+    { id: "projects", title: "Projects", width:"600", height:"650", content: <Projects/> },
     ];
     const [darkMode, setDarkMode] = useState(false);
     useEffect(() => {
