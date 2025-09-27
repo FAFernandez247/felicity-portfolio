@@ -12,16 +12,23 @@ export default function DraggableCards ({
     zIndexes,
     setZIndexes,
     highestZ,
-    setHighestZ
+    setHighestZ,
+    isMobile = false
     }) {
     const nodeRef = useRef(null);
     const [position, setPosition] = useState({ top: 0, left: 0 });
 
     useEffect(() => {
-        const x = (window.innerWidth - width) / 2;
-        const y = (window.innerHeight - height) / 2;
+        let x, y;
+        if (isMobile) {
+            x = (window.innerWidth - Math.min(width, window.innerWidth * 0.9)) / 2;
+            y = 20;
+        } else {
+            x = (window.innerWidth - width) / 2;
+            y = (window.innerHeight - height) / 2;
+        }
         setPosition({ top: y, left: x });
-    }, [width, height]);
+    }, [width, height, isMobile]);
 
     const bringToFront = () => {
         const newZ = highestZ + 1;
@@ -30,24 +37,28 @@ export default function DraggableCards ({
     };
     return (
 
-    <Draggable nodeRef={nodeRef} handle=".drag-handle" bounds="body">
+    <Draggable nodeRef={nodeRef} handle=".drag-handle" bounds="body" disable={isMobile}>
         <div ref={nodeRef} 
         onClick={bringToFront}
         style={{
-            width: `${width}px`,
-            height: `${height}px`,
+            width: isMobile ? "90vw" : `${width}px`,
+            height: isMobile ? "80vh" : `${height}px`,
             top: `${position.top}px`,
             left: `${position.left}px`,
             zIndex: zIndexes[id] || 1
         }}
-        className="absolute window-body self-center">
-            <div className="drag-handle h-10 w-full window-header cursor-move flex items-center justify-between px-2">
+        className="absolute window-body self-center max-w-[95vw] max-h-[90vh] overflow-hidden flex flex-col">
+            <div className="drag-handle h-10 w-full window-header cursor-move flex items-center justify-between px-2 flex-shrink-0">
                 <button className="absolute right-5 exitButton exitButton-hover exitButton-bevel"
-                onClick={() => setOpenCards({...openCards, [id]: false})}/>
+                onClick={() => setOpenCards({...openCards, [id]: false})}
+                aria-label="Close window"
+                />
                 <p className="text-pink-900 dark:text-blue-950 press-start-2p text-sm m-2 text-shadow-lg">{title}</p>
             </div>
-            <div className="p-8 overflow-auto h-[calc(100%-2.5rem)]">
-                {children}
+            <div className="overflow-y-auto flex-1 min-h-0">
+                <div className={`${isMobile ? "p-3" : "p-4 md:p-8"} h-full `}>
+                    {children}
+                </div>
             </div>
             </div>
     </Draggable>

@@ -101,10 +101,20 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #929292; /* Thumb color */
+  background: #929292;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Darker when hovered */
+  background: #555;
 }
 
+html, body {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+}
+
+@media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+}

@@ -40,19 +40,19 @@ export default function Skills() {
   ];
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-4 lg:gap-6 min-h-0 h-full">
       {categories.map((category) => (
         <div key={category.title}>
             <div
-            className={`flex gap-3 items-center mb-1 p-2 exitButton-bevel ${
+            className={`flex gap-2 lg:gap-3 items-center mb-1 p-2 exitButton-bevel ${
               category.locked
                 ? "opacity-50 cursor-not-allowed"
-                : "bg-darkpastelpink dark:bg-darkerpastelblue hover:bg-peach hover:dark:bg-darkblue"
+                : "bg-darkpastelpink/50 dark:bg-darkerpastelblue/50 hover:bg-peach hover:dark:bg-darkblue/80"
             }`}
             title={category.locked ? "Hire to unlock my full potential ✨" : ""}
             >
                 <div
-                    className="w-12 h-10 bg-no-repeat bg-contain"
+                    className="w-8 h-6 lg:w-12 lg:h-10 bg-no-repeat bg-contain"
                     style={{ backgroundImage: `url(${
                         category.locked 
                         ? "/assets/lockIcon.png"
@@ -60,17 +60,17 @@ export default function Skills() {
                         })`,
                     }}
                 />
-                <h4 className="press-start-2p text-sm mb-2 pt-2">{category.title}</h4>
+                <h4 className="press-start-2p text-pink-950 dark:text-blue-950 text-xs lg:text-sm lg:mb-2 lg:pt-2">{category.title}</h4>
             </div>
         {!category.locked && (
           <div className="flex flex-col gap-1">
             {category.skills.map((skill) => (
               <div
                 key={skill.id}
-                className="flex gap-3 items-center ml-8 bg-darkpastelpink dark:bg-darkerpastelblue p-2 exitButton-bevel hover:bg-peach hover:dark:bg-darkblue"
+                className="flex gap-2 lg:gap-3 items-center ml-4 lg:ml-8 bg-darkpastelpink/50 dark:bg-darkerpastelblue/50 p-2 exitButton-bevel hover:bg-peach hover:dark:bg-darkblue/80"
               >
                 <div
-                  className={`${skill.icon === "folderIcon" ? "w-12 h-10" : "w-10 h-10"} bg-no-repeat bg-contain`}
+                  className={`${skill.icon === "folderIcon" ? "w-8 h-6 lg:w-12 lg:h-10" : "w-6 h-6 lg:w-10 lg:h-10"} bg-no-repeat bg-contain`}
                   style={{
                     backgroundImage: `url(/assets/${skill.icon}.png)`
                   }}

@@ -8,7 +8,8 @@ export default function Cards({
   zIndexes,
   setZIndexes,
   highestZ,
-  setHighestZ
+  setHighestZ,
+  isMobile = false
  }) {
   return (
     <>
@@ -26,6 +27,7 @@ export default function Cards({
             setZIndexes={setZIndexes}
             highestZ={highestZ}
             setHighestZ={setHighestZ}
+            isMobile={isMobile}
           >
             <div className="flex flex-col space-y-4">
               {card.content}

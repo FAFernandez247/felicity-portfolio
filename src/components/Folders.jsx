@@ -7,21 +7,20 @@ export default function FolderButtons({
     zIndexes,
     setZIndexes,
     highestZ,
-    setHighestZ
+    setHighestZ,
+    isMobile = false
 }){
     const handleClick = () => {
-        // Open the card
         setOpenCards({ ...openCards, [card.id]: true });
-        // Bring to front
         const newZ = highestZ + 1;
         setZIndexes({ ...zIndexes, [card.id]: newZ });
         setHighestZ(newZ);
     };
     return (
         <div className="flex flex-col items-center">
-            <button className="folderIcon folderIcon-hover"
+            <button className={`folderIcon folderIcon-hover ${isMobile ? "w-12 h-12" : " "}`}
             onClick={handleClick}/>
-            <h6 className="vt323 text-shadow-lg/80 m-0">{card.title}</h6>
+            <h6 className="vt323 text-shadow-lg/80 m-0 text-sm md:text-lg">{card.title}</h6>
         </div>
     )
 }
