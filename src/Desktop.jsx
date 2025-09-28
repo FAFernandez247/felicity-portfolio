@@ -51,7 +51,7 @@ export default function App() {
         <div className="h-screen w-screen flex flex-col relative overflow-hidden"
         onMouseMove={handleMouseMove}>
             <div className="absolute inset-0 backdrop pointer-events-none"/>
-            <div className="absolute inset-0 bg-[url('./assets/stars.png')] bg-repeat bg-center"
+            <div className="absolute inset-0 bg-[url('/assets/stars.png')] bg-repeat bg-center"
             style={{
             backgroundPosition: isMobile ? "center" : `${mousePos.x * 0.2}% ${mousePos.y * 0.2}%`,
             }}/>
