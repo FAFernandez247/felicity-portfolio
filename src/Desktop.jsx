@@ -57,7 +57,7 @@ export default function App() {
             }}/>
             {!isMobile && (
                 <img 
-                src="./assets/cat-chew.gif" 
+                src="/assets/cat-chew.gif" 
                 className="absolute bottom-40 right-80 w-30 h-30 rounded-lg shadow-lg transform hover:-translate-y-20 transition-all duration-200 ease-out"
                 />
             )}
@@ -86,21 +86,21 @@ export default function App() {
             <div className={`absolute flex items-center gap-8 ${isMobile ? "bottom-40 inset-x-0 justify-center flex-row space-y-0" : "right-20 top-20 flex-col space-y-20"}`}>
                 <div className="flex flex-col items-center gap-2">
                     <img 
-                        src="./assets/blenderIcon.png" 
+                        src="/assets/blenderIcon.png" 
                         className={isMobile ? "w-12 h-12" : "w-16 h-16"}
                     />
                     <h6 className="vt323 text-shadow-lg/80 text-sm md:text-lg">Blender</h6>
                 </div>
                 <div className="flex flex-col items-center gap-2">
                     <img 
-                        src="./assets/pixeloramaIcon.png" 
+                        src="/assets/pixeloramaIcon.png" 
                         className={isMobile ? "w-12 h-12" : "w-16 h-16"}
                     />
                     <h6 className="vt323 text-shadow-lg/80 text-sm md:text-lg">Pixelorama</h6>
                 </div>
                <div className="flex flex-col items-center gap-2">
                     <img 
-                        src="./assets/vscodeIcon.png" 
+                        src="/assets/vscodeIcon.png" 
                         className={isMobile ? "w-12 h-12" : "w-16 h-16"}
                     />
                     <h6 className="vt323 text-shadow-lg/80 text-sm md:text-lg">VS Code</h6>
