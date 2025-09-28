@@ -25,19 +25,19 @@ export default function Taskbar({isMobile = false}){
                 className={`relative select-none pointer-events-none ${isMobile ? "h-12 w-12 left-2" : "h-[60px] w-[60px] left-5"}`}
             />
             <div className={`relative flex flex-row ${isMobile ? " space-x-3 left-4" : "space-x-5 left-10"}`}>
-                <a className={`bg-[url('./assets/githubIcon.png')] taskbarIcon-hover taskbarIcon ${isMobile ? "w-12 h-12" : "p-1"}`} 
+                <a className={`bg-[url('/assets/githubIcon.png')] taskbarIcon-hover taskbarIcon ${isMobile ? "w-12 h-12" : "p-1"}`} 
                     href="https://github.com/FAFernandez247" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     aria-label="GitHub"
                 />
-                <a className={`bg-[url('./assets/linkedInIcon.png')] taskbarIcon-hover taskbarIcon ${isMobile ? "w-12 h-12" : "p-1"} `}
+                <a className={`bg-[url('/assets/linkedInIcon.png')] taskbarIcon-hover taskbarIcon ${isMobile ? "w-12 h-12" : "p-1"} `}
                     href="https://www.linkedin.com/in/felicity-andrea-f-633626138/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
                 />
-                <a className={`bg-[url('./assets/gmailIcon.png')] taskbarIcon-hover taskbarIcon ${isMobile ? "w-12 h-12" : "p-1"}`} 
+                <a className={`bg-[url('/assets/gmailIcon.png')] taskbarIcon-hover taskbarIcon ${isMobile ? "w-12 h-12" : "p-1"}`} 
                     href="mailto:felicityandreafernandez@gmail.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
