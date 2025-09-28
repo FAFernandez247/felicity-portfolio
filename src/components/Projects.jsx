@@ -69,7 +69,7 @@ export default function Projects(){
                 <div
                     className="w-8 h-6 lg:w-12 lg:h-10 bg-no-repeat bg-contain"
                     style={{ 
-                        backgroundImage: `url(/assets/folderIcon.png)`
+                        backgroundImage: `url(./assets/folderIcon.png)`
                     }}
                 />
                 <h4 className="press-start-2p text-xs lg:text-sm lg:mb-2 lg:pt-2">{project.title}</h4>
@@ -88,7 +88,7 @@ export default function Projects(){
                     feature.image === "isoVoxelRoom.png" ? "h-52 lg:h-60" : "h-48 lg:h-56"
                     }`}>
                     <img 
-                        src={`/assets/${feature.image}`}
+                        src={`./assets/${feature.image}`}
                         alt={feature.name}
                         className="max-w-full max-h-full object-contain"
                     />
@@ -111,7 +111,7 @@ export default function Projects(){
                           className="flex items-center gap-2 bg-gray-700 hover:bg-gray-800 dark:bg-gray-800 dark:hover:bg-gray-900 text-white px-2 lg:px-4 py-1 lg:py-2 transition-colors vt323 border-b-4 border-r-4 border-gray-950 text-xs lg:text-sm"
                         >
                           <img 
-                            src="/assets/githubIcon.png" 
+                            src="./assets/githubIcon.png" 
                             alt="GitHub" 
                             className="w-4 h-4"
                           />
@@ -126,7 +126,7 @@ export default function Projects(){
                           className="flex items-center gap-2 bg-red-500 hover:bg-red-600 dark:bg-red-700 dark:hover:bg-red-800 text-white px-2 lg:px-4 py-1 lg:py-2 transition-colors vt323 border-b-4 border-r-4 border-red-950 text-xs lg:text-sm"
                         >
                           <img 
-                            src="/assets/videoPlayIcon.png" 
+                            src="./assets/videoPlayIcon.png" 
                             alt="Video Demo" 
                             className="w-4 h-4"
                           />
