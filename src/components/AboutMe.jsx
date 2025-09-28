@@ -6,11 +6,12 @@ export default function AboutMe(){
                     <div className="flip-container w-40 h-48 lg:w-48 lg:h-56 border-8 border-pink-950 dark:border-blue-950 mb-1 lg:mb-6">
                         <div className="flip-inner relative w-full h-full">
                             <img
-                            src="/assets/pixelMe.jpg"
-                            className="flip-front w-full h-full object-cover"/>
-                            <img
+                            src="/assets/avatar.png"
+                            className="w-full h-full object-cover"
+                            style={{ imageRendering: "pixelated" }}/>
+                            {/* <img
                             src="/assets/me.jpg"
-                            className="flip-back w-full h-full object-cover"/>
+                            className="flip-back w-full h-full object-cover"/> */}
                         </div>
                     </div>
                 </div>

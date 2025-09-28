@@ -80,6 +80,7 @@ export default function App() {
             <div className={`relative text-center pointer-events-none ${isMobile ? "mt-50 px-4" : "mt-85"}`}>
                 <h1 className={`text-shadow-lg/80 press-start-2p ${isMobile ? "text-xl mb-4" : "text-4xl/relaxed"}`}>Learning to BUILD <br className={isMobile ? "hidden" : "block"}/>and BREAK Software</h1>
                 <h5 className={`text-shadow-lg/80 vt323 ${isMobile ? "text-[16px] mt-6 font-semibold" : "text-xl mt-12"}`}>Trained in test automation and frontend development, <br className={isMobile ? "hidden" : "block"}/>ready to contribute to modern web projects.</h5>
+                <p className={`text-white text-bold vt323 text-sm mt-120 ${isMobile ? "block" : "hidden" } animate-pulse bg-gray-900 py-1`}>Better experience on desktop!</p>
             </div>
 
             <div className={`absolute flex items-center gap-8 ${isMobile ? "bottom-40 inset-x-0 justify-center flex-row space-y-0" : "right-20 top-20 flex-col space-y-20"}`}>
