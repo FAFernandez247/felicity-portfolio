@@ -29,7 +29,7 @@
     }
     .folderIcon {
         @apply w-20 h-16 bg-no-repeat bg-contain;
-        background-image: url('/assets/folderIcon.png');
+        background-image: url('./assets/folderIcon.png');
     }
     .taskbarIcon {
         @apply w-[60px] h-[60px] bg-no-repeat bg-contain bg-center;
@@ -37,7 +37,7 @@
     }
     .exitButton {
         @apply w-7 h-7 bg-no-repeat bg-contain bg-center bg-cream dark:bg-pastelblue;
-        background-image: url('/assets/exitButton.png');
+        background-image: url('./assets/exitButton.png');
     }
     .taskbarIcon-hover {
         @apply hover:bg-gray-500/30 hover:shadow-lg transition-all;

@@ -55,8 +55,8 @@ export default function Skills() {
                     className="w-8 h-6 lg:w-12 lg:h-10 bg-no-repeat bg-contain"
                     style={{ backgroundImage: `url(${
                         category.locked 
-                        ? "/assets/lockIcon.png"
-                        : "/assets/folderIcon.png"
+                        ? "./assets/lockIcon.png"
+                        : "./assets/folderIcon.png"
                         })`,
                     }}
                 />
@@ -72,7 +72,7 @@ export default function Skills() {
                 <div
                   className={`${skill.icon === "folderIcon" ? "w-8 h-6 lg:w-12 lg:h-10" : "w-6 h-6 lg:w-10 lg:h-10"} bg-no-repeat bg-contain`}
                   style={{
-                    backgroundImage: `url(/assets/${skill.icon}.png)`
+                    backgroundImage: `url(./assets/${skill.icon}.png)`
                   }}
                 />
                 <h6 className="vt323 text-black font-semibold m-0">
