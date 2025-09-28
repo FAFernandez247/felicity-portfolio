@@ -47,10 +47,15 @@ export default function DraggableCards ({
             left: `${position.left}px`,
             zIndex: zIndexes[id] || 1
         }}
-        className="absolute window-body self-center max-w-[95vw] max-h-[90vh] overflow-hidden flex flex-col">
+        className={`absolute window-body self-center max-w-[95vw] max-h-[90vh] overflow-hidden flex flex-col ${
+            isMobile ? 'pointer-events-auto' : '' // ADD THIS
+        }`}>
             <div className="drag-handle h-10 w-full window-header cursor-move flex items-center justify-between px-2 flex-shrink-0">
                 <button className="absolute right-5 exitButton exitButton-hover exitButton-bevel"
-                onClick={() => setOpenCards({...openCards, [id]: false})}
+                onClick={(e) => {
+                    console.log('Exit button clicked!');
+        e.stopPropagation(); // ← ONLY ADD THIS LINE
+        setOpenCards({...openCards, [id]: false});}}
                 aria-label="Close window"
                 />
                 <p className="text-pink-900 dark:text-blue-950 press-start-2p text-sm m-2 text-shadow-lg">{title}</p>
