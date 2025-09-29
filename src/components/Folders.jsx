@@ -20,7 +20,7 @@ export default function FolderButtons({
         <div className="flex flex-col items-center">
             <button className={`folderIcon folderIcon-hover ${isMobile ? "w-12 h-12" : " "}`}
             onClick={handleClick}/>
-            <h6 className="vt323 text-shadow-lg/80 m-0 text-sm md:text-lg">{card.title}</h6>
+            <h6 className="vt323-regular text-shadow-lg/80 m-0 text-lg md:text-2xl">{card.title}</h6>
         </div>
     )
 }

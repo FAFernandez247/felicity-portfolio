@@ -72,7 +72,7 @@ export default function Projects(){
                         backgroundImage: `url(./assets/folderIcon.png)`
                     }}
                 />
-                <h4 className="press-start-2p text-xs lg:text-sm lg:mb-2 lg:pt-2">{project.title}</h4>
+                <h4 className="press-start-2p-regular text-pink-950 dark:text-blue-950 text-xs lg:text-sm lg:mb-2 lg:pt-2">{project.title}</h4>
             </div>
           <div className="flex flex-col gap-1 min-h-0">
             {project.featured.map((feature) => (
@@ -81,7 +81,7 @@ export default function Projects(){
                 className="flex flex-col gap-3 items-center mx-4 lg:mx-8 bg-darkpastelpink/50 dark:bg-darkerpastelblue/30 p-2 exitButton-bevel hover:bg-peach/70 hover:dark:bg-darkblue/50 flex-shrink-0"
               >
                 <div className="w-full bg-cream dark:bg-pastelblue p-2 border-b-2 border-gray-600 text-center">
-                    <h6 className="vt323 text-pink-950 dark:text-blue-950 font-bold">{feature.name}</h6>
+                    <h6 className="share-tech-mono-regular text-base lg:text-xl text-pink-950 dark:text-blue-950 font-bold">{feature.name}</h6>
                 </div>
                 <div className="w-full max-w-sm flex justify-center">
                     <div className={`relative w-full max-w-sm border-4 border-pink-950 dark:border-blue-950 hover:scale-105 transition-transform bg-gray-200 dark:bg-gray-700 flex items-center justify-center ${
@@ -94,11 +94,11 @@ export default function Projects(){
                     />
                     </div>
                 </div>
-                <p className="vt323 text-black mx-3 indent-5 font-semibold">{feature.description}</p>
+                <p className="share-tech-mono-regular text-sm lg:text-base text-black mx-3 indent-5 font-bold">{feature.description}</p>
                 <div className="flex flex-row flex-wrap justify-center gap-2">
                   {feature.tags.map((tag) => (
                     <div key={tag.id} className="bg-gray-600/50 dark:bg-gray-600/50 px-2 py-1 border-b-2 border-r-2 border-cream dark:border-pastelblue">
-                      <p className="vt323 text-black dark:text-white text-xs lg:text-sm">{tag.name}</p>
+                      <p className="share-tech-mono-regular text-xs lg:text-xs text-black dark:text-white">{tag.name}</p>
                     </div>
                   ))}
                 </div>
@@ -108,7 +108,7 @@ export default function Projects(){
                           href={feature.link} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 bg-gray-700 hover:bg-gray-800 dark:bg-gray-800 dark:hover:bg-gray-900 text-white px-2 lg:px-4 py-1 lg:py-2 transition-colors vt323 border-b-4 border-r-4 border-gray-950 text-xs lg:text-sm"
+                          className="flex items-center gap-2 bg-gray-700 hover:bg-gray-800 dark:bg-gray-800 dark:hover:bg-gray-900 text-white px-2 lg:px-4 py-1 lg:py-2 transition-colors vt323 border-b-4 border-r-4 border-gray-950 text-xs lg:text-sm share-tech-mono-regular"
                         >
                           <img 
                             src="./assets/githubIcon.png" 
@@ -123,7 +123,7 @@ export default function Projects(){
                           href={feature.videoDemo} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 bg-red-500 hover:bg-red-600 dark:bg-red-700 dark:hover:bg-red-800 text-white px-2 lg:px-4 py-1 lg:py-2 transition-colors vt323 border-b-4 border-r-4 border-red-950 text-xs lg:text-sm"
+                          className="flex items-center gap-2 bg-red-500 hover:bg-red-600 dark:bg-red-700 dark:hover:bg-red-800 text-white px-2 lg:px-4 py-1 lg:py-2 transition-colors vt323 border-b-4 border-r-4 border-red-950 text-xs lg:text-sm share-tech-mono-regular"
                         >
                           <img 
                             src="./assets/videoPlayIcon.png" 

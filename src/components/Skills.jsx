@@ -60,7 +60,7 @@ export default function Skills() {
                         })`,
                     }}
                 />
-                <h4 className="press-start-2p text-pink-950 dark:text-blue-950 text-xs lg:text-sm lg:mb-2 lg:pt-2">{category.title}</h4>
+                <h4 className="press-start-2p-regular text-pink-950 dark:text-blue-950 text-xs lg:text-sm lg:mb-2 lg:pt-2">{category.title}</h4>
             </div>
         {!category.locked && (
           <div className="flex flex-col gap-1">
@@ -75,7 +75,7 @@ export default function Skills() {
                     backgroundImage: `url(./assets/${skill.icon}.png)`
                   }}
                 />
-                <h6 className="vt323 text-black font-semibold m-0">
+                <h6 className="share-tech-mono-regular font-bold text-base text-black m-0">
                   {skill.name}
                 </h6>
               </div>

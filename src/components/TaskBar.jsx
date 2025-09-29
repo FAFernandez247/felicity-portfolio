@@ -44,7 +44,7 @@ export default function Taskbar({isMobile = false}){
                     aria-label="Gmail"
                 />
             </div>
-            <p className={`absolute text-white press-start-2p ${isMobile ? "text-sm right-4 inset-y-3" : "text-md right-8 bottom-4"}`}>{time}</p>
+            <p className={`absolute text-white press-start-2p-regular ${isMobile ? "text-xs right-4 inset-y-4" : "text-md right-8 bottom-4"}`}>{time}</p>
         </div>
     )
 }

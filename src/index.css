@@ -17,13 +17,21 @@
     .gradient-overlay{
         @apply bg-gradient-to-b from-pink-500/60 to-pink-200/10 dark:bg-gradient-to-b dark:from-blue-950/60 dark:to-blue-400/20;
     }
-    .press-start-2p {
+
+    .press-start-2p-regular {
         font-family: "Press Start 2P", system-ui;
         font-weight: 400;
         font-style: normal;
     }
-    .vt323 {
+
+    .vt323-regular {
         font-family: "VT323", monospace;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .share-tech-mono-regular {
+        font-family: "Share Tech Mono", monospace;
         font-weight: 400;
         font-style: normal;
     }
@@ -49,7 +57,7 @@
         @apply hover:bg-red-500/90 hover:shadow-lg transition-all;
     }
     .window-body {
-        @apply ring-8 border-2 bg-cream ring-pink-950 border-amber-50 dark:bg-pastelblue dark:ring-blue-950 dark:border-blue-100;
+        @apply ring-8 border-2 bg-cream ring-pink-950 border-amber-50 dark:bg-blue-100 dark:ring-blue-950 dark:border-blue-100;
     }
     .window-header {
         @apply border-b-4 border-gray-400 bg-darkpastelpink dark:bg-darkerpastelblue;

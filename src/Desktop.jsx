@@ -78,9 +78,9 @@ export default function App() {
             </div>
 
             <div className={`relative text-center pointer-events-none ${isMobile ? "mt-50 px-4" : "mt-85"}`}>
-                <h1 className={`text-shadow-lg/80 press-start-2p ${isMobile ? "text-xl mb-4" : "text-4xl/relaxed"}`}>Learning to BUILD <br className={isMobile ? "hidden" : "block"}/>and BREAK Software</h1>
-                <h5 className={`text-shadow-lg/80 vt323 ${isMobile ? "text-[16px] mt-6 font-semibold" : "text-xl mt-12"}`}>Trained in test automation and frontend development, <br className={isMobile ? "hidden" : "block"}/>ready to contribute to modern web projects.</h5>
-                <p className={`text-white text-bold vt323 text-sm mt-20 ${isMobile ? "block" : "hidden" } animate-pulse py-1`}>Better experience on desktop!</p>
+                <h1 className={`text-shadow-lg/50 press-start-2p-regular ${isMobile ? "text-2xl mb-4" : "text-4xl/relaxed"}`}>Learning to BUILD <br className={isMobile ? "hidden" : "block"}/>and BREAK Software</h1>
+                <h5 className={`text-shadow-lg/50 vt323-regular ${isMobile ? "text-lg mt-6" : "text-2xl mt-12"}`}>Trained in test automation and frontend development, <br className={isMobile ? "hidden" : "block"}/>ready to contribute to modern web projects.</h5>
+                <p className={`text-white vt323-regular text-lg mt-20 ${isMobile ? "block" : "hidden" } animate-pulse py-1`}>Better experience on desktop!</p>
             </div>
 
             <div className={`absolute flex items-center gap-8 ${isMobile ? "bottom-40 inset-x-0 justify-center flex-row space-y-0" : "right-20 top-20 flex-col space-y-20"}`}>
@@ -89,21 +89,21 @@ export default function App() {
                         src="./assets/blenderIcon.png" 
                         className={isMobile ? "w-12 h-12" : "w-16 h-16"}
                     />
-                    <h6 className="vt323 text-shadow-lg/80 text-sm md:text-lg">Blender</h6>
+                    <h6 className="vt323-regular text-shadow-lg/80 text-lg md:text-2xl">Blender</h6>
                 </div>
                 <div className="flex flex-col items-center gap-2">
                     <img 
                         src="./assets/pixeloramaIcon.png" 
                         className={isMobile ? "w-12 h-12" : "w-16 h-16"}
                     />
-                    <h6 className="vt323 text-shadow-lg/80 text-sm md:text-lg">Pixelorama</h6>
+                    <h6 className="vt323-regular text-shadow-lg/80 text-lg md:text-2xl">Pixelorama</h6>
                 </div>
                <div className="flex flex-col items-center gap-2">
                     <img 
                         src="./assets/vscodeIcon.png" 
                         className={isMobile ? "w-12 h-12" : "w-16 h-16"}
                     />
-                    <h6 className="vt323 text-shadow-lg/80 text-sm md:text-lg">VS Code</h6>
+                    <h6 className="vt323-regular text-shadow-lg/80 text-lg md:text-2xl">VS Code</h6>
                 </div>
             </div>
 

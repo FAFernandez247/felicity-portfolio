@@ -54,7 +54,7 @@ export default function DraggableCards ({
             />
             <div className="drag-handle h-10 w-full window-header cursor-move flex items-center justify-between px-2 flex-shrink-0">
 
-                <p className="text-pink-900 dark:text-blue-950 press-start-2p text-sm m-2 text-shadow-lg">{title}</p>
+                <p className="text-pink-900 dark:text-blue-950 press-start-2p-regular text-sm m-2 text-shadow-lg">{title}</p>
             </div>
             <div className="overflow-y-auto flex-1 min-h-0">
                 <div className={`${isMobile ? "p-3" : "p-4 md:p-8"} h-full `}>
